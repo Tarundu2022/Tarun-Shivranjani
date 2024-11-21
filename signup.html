@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+
+        <form method="post">
+            {% csrf_token %} 
+        <h2>Signup Here</h2>
+        <input type="name" name="username" placeholder="Enter user name" id="username">
+        <input type="email" name="email" placeholder="Enter email " id="username">
+        <input type="password" name="pass1" placeholder="Enter Password Here" id="password">
+        <input type="password" name="pass2" placeholder="repeat Password Here" id="password">
+        <button class="btnn"><a href="{% url 'login' %}">Signup</a></button><br>
+       
+    
+    </form>
+    </div>
+</body>
+</html>
